@@ -15,14 +15,14 @@ const Email = async (req, res) => {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: 'tester201003@gmail.com',
-            pass: 'axleclwtfteuttml'
+            user: '******************',
+            pass: '*********'
         }
     });
 
     let info = await transporter.sendMail({
         from: '"Tester" <tester201003@gmail.com>', // sender address
-        to: "arpangupta320@gmail.com, arpan2010071@akgec.ac.in", // list of receivers
+        to: "*****************, ******************", // list of receivers
         subject: "OTP for verification ✔", // Subject line
         text: `${random}`, // plain text body
         // html: "<b>Hello world?</b>", // html body
